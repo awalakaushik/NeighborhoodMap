@@ -21,42 +21,36 @@
 			<!-- ListSection -->
 			<div class="col-md-3">
 				<!-- Application Logo Section -->
-				<div class="row">
-
-				</div>
-				<!-- ListView section -->
-				<div class="row">
-					<!-- Search Bar -->
-					<input type="text" name="filterListItems">
-					<!-- List Items -->
-					<ul class="list-group">
-						<li class="list-group-item"></li>
-					</ul>
-				</div>
+				<!-- Search Filter -->
+				<input type="text" class="form-control" placeholder="Filter list items here"> <br/>
+				<ul class="list-group">
+					<li class="list-group-item">Item1</li>
+				</ul>
 			</div>
 			<!-- Maps Section -->
-			<div class="col-md-9" id="map"></div>
+			<div class="col-md-9">
+				<div id="map"></div>
+			</div>
 		</div>
 	</div>
-
-
 
 
 	<!-- Scripts -->
 	<!-- JQuery CDN -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
 	<!-- Bootstrap JS CDN -->
-  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  	<!-- KnockoutJS CDN -->
-  	<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/knockout/knockout-3.4.2.js"></script>
-  	<!-- Google Maps -->
-  	<!-- APIKEY =  AIzaSyC2hMCBKbLu9ProK5SbnItmNW0wJptLyaw  -->
-  	<script async
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC2hMCBKbLu9ProK5SbnItmNW0wJptLyaw&v=3&callback=initMap">
-    </script>
-  	<!-- Custom Scripts -->
-  	<script src="js/map.js"></script>
-  	<script src="js/search.js"></script>
-  	<script src="js/app.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<!-- KnockoutJS CDN -->
+	<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/knockout/knockout-3.4.2.js"></script>
+	<!-- Google Maps -->
+	<!-- APIKEY =  AIzaSyC2hMCBKbLu9ProK5SbnItmNW0wJptLyaw  -->
+	<script async
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC2hMCBKbLu9ProK5SbnItmNW0wJptLyaw&v=3&callback=initMap"
+		onerror="handleMapErrorOnLoad()">
+	</script>
+	<!-- Custom Scripts -->
+	<script src="js/map.js"></script>
+	<script src="js/search.js"></script>
+	<script src="js/app.js"></script>
 </body>
 </html>

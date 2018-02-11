@@ -12,5 +12,5 @@ function initMap() {
 
 // function to handle error while loading the map
 function handleMapErrorOnLoad() {
-
+	alert("It looks like there is some problem while loading google maps. Please try to refresh your page and try again!");
 }
