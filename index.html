@@ -22,9 +22,9 @@
 			<div class="col-md-3">
 				<!-- Application Logo Section -->
 				<!-- Search Filter -->
-				<input type="text" class="form-control" placeholder="Filter list items here"> <br/>
-				<ul class="list-group">
-					<li class="list-group-item">Item1</li>
+				<input type="text" class="searchTemple  form-control" data-bind="value: searchTemple, valueUpdate: 'afterkeydown', event:{keyup: filterTempleData}" placeholder="Filter list items here"> <br/>
+				<ul class="list-group" data-bind="foreach: markers">
+					<li class="marker-item list-group-item" data-bind="visible: show, click: $parent.showInfoWindow, text: title"></li>
 				</ul>
 			</div>
 			<!-- Maps Section -->
@@ -50,7 +50,6 @@
 	</script>
 	<!-- Custom Scripts -->
 	<script src="js/map.js"></script>
-	<script src="js/search.js"></script>
 	<script src="js/app.js"></script>
 </body>
 </html>
